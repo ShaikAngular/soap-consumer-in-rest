@@ -1,5 +1,5 @@
 
-package com.parasoft.wsdl.calculator;
+package org.tempuri;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -17,8 +17,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="numerator" type="{http://www.w3.org/2001/XMLSchema}float"/&gt;
- *         &lt;element name="denominator" type="{http://www.w3.org/2001/XMLSchema}float"/&gt;
+ *         &lt;element name="intA" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="intB" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -29,45 +29,45 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "numerator",
-    "denominator"
+    "intA",
+    "intB"
 })
-@XmlRootElement(name = "divide")
+@XmlRootElement(name = "Divide")
 public class Divide {
 
-    protected float numerator;
-    protected float denominator;
+    protected int intA;
+    protected int intB;
 
     /**
-     * Gets the value of the numerator property.
+     * Gets the value of the intA property.
      * 
      */
-    public float getNumerator() {
-        return numerator;
+    public int getIntA() {
+        return intA;
     }
 
     /**
-     * Sets the value of the numerator property.
+     * Sets the value of the intA property.
      * 
      */
-    public void setNumerator(float value) {
-        this.numerator = value;
+    public void setIntA(int value) {
+        this.intA = value;
     }
 
     /**
-     * Gets the value of the denominator property.
+     * Gets the value of the intB property.
      * 
      */
-    public float getDenominator() {
-        return denominator;
+    public int getIntB() {
+        return intB;
     }
 
     /**
-     * Sets the value of the denominator property.
+     * Sets the value of the intB property.
      * 
      */
-    public void setDenominator(float value) {
-        this.denominator = value;
+    public void setIntB(int value) {
+        this.intB = value;
     }
 
 }

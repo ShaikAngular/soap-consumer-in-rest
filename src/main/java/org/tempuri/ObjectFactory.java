@@ -1,5 +1,5 @@
 
-package com.parasoft.wsdl.calculator;
+package org.tempuri;
 
 import javax.xml.bind.annotation.XmlRegistry;
 
@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.XmlRegistry;
 /**
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
- * generated in the com.parasoft.wsdl.calculator package. 
+ * generated in the org.tempuri package. 
  * <p>An ObjectFactory allows you to programatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
@@ -23,7 +23,7 @@ public class ObjectFactory {
 
 
     /**
-     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.parasoft.wsdl.calculator
+     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: org.tempuri
      * 
      */
     public ObjectFactory() {
@@ -46,19 +46,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Divide }
+     * Create an instance of {@link Subtract }
      * 
      */
-    public Divide createDivide() {
-        return new Divide();
+    public Subtract createSubtract() {
+        return new Subtract();
     }
 
     /**
-     * Create an instance of {@link DivideResponse }
+     * Create an instance of {@link SubtractResponse }
      * 
      */
-    public DivideResponse createDivideResponse() {
-        return new DivideResponse();
+    public SubtractResponse createSubtractResponse() {
+        return new SubtractResponse();
     }
 
     /**
@@ -78,19 +78,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Subtract }
+     * Create an instance of {@link Divide }
      * 
      */
-    public Subtract createSubtract() {
-        return new Subtract();
+    public Divide createDivide() {
+        return new Divide();
     }
 
     /**
-     * Create an instance of {@link SubtractResponse }
+     * Create an instance of {@link DivideResponse }
      * 
      */
-    public SubtractResponse createSubtractResponse() {
-        return new SubtractResponse();
+    public DivideResponse createDivideResponse() {
+        return new DivideResponse();
     }
 
 }

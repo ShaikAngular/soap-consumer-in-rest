@@ -1,5 +1,5 @@
 
-package com.parasoft.wsdl.calculator;
+package org.tempuri;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -18,7 +18,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="Result" type="{http://www.w3.org/2001/XMLSchema}float"/&gt;
+ *         &lt;element name="AddResult" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -29,28 +29,28 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "result"
+    "addResult"
 })
-@XmlRootElement(name = "subtractResponse")
-public class SubtractResponse {
+@XmlRootElement(name = "AddResponse")
+public class AddResponse {
 
-    @XmlElement(name = "Result")
-    protected float result;
+    @XmlElement(name = "AddResult")
+    protected int addResult;
 
     /**
-     * Gets the value of the result property.
+     * Gets the value of the addResult property.
      * 
      */
-    public float getResult() {
-        return result;
+    public int getAddResult() {
+        return addResult;
     }
 
     /**
-     * Sets the value of the result property.
+     * Sets the value of the addResult property.
      * 
      */
-    public void setResult(float value) {
-        this.result = value;
+    public void setAddResult(int value) {
+        this.addResult = value;
     }
 
 }

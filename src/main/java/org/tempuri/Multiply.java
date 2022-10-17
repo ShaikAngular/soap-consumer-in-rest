@@ -1,5 +1,5 @@
 
-package com.parasoft.wsdl.calculator;
+package org.tempuri;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -17,8 +17,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="x" type="{http://www.w3.org/2001/XMLSchema}float"/&gt;
- *         &lt;element name="y" type="{http://www.w3.org/2001/XMLSchema}float"/&gt;
+ *         &lt;element name="intA" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="intB" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -29,45 +29,45 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "x",
-    "y"
+    "intA",
+    "intB"
 })
-@XmlRootElement(name = "subtract")
-public class Subtract {
+@XmlRootElement(name = "Multiply")
+public class Multiply {
 
-    protected float x;
-    protected float y;
+    protected int intA;
+    protected int intB;
 
     /**
-     * Gets the value of the x property.
+     * Gets the value of the intA property.
      * 
      */
-    public float getX() {
-        return x;
+    public int getIntA() {
+        return intA;
     }
 
     /**
-     * Sets the value of the x property.
+     * Sets the value of the intA property.
      * 
      */
-    public void setX(float value) {
-        this.x = value;
+    public void setIntA(int value) {
+        this.intA = value;
     }
 
     /**
-     * Gets the value of the y property.
+     * Gets the value of the intB property.
      * 
      */
-    public float getY() {
-        return y;
+    public int getIntB() {
+        return intB;
     }
 
     /**
-     * Sets the value of the y property.
+     * Sets the value of the intB property.
      * 
      */
-    public void setY(float value) {
-        this.y = value;
+    public void setIntB(int value) {
+        this.intB = value;
     }
 
 }

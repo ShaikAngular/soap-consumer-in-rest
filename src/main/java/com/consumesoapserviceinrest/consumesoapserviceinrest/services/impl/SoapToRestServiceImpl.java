@@ -1,9 +1,12 @@
 package com.consumesoapserviceinrest.consumesoapserviceinrest.services.impl;
 
 import org.springframework.stereotype.Service;
+import org.tempuri.Calculator;
 
 import com.consumesoapserviceinrest.consumesoapserviceinrest.services.SoapToRestService;
-import com.parasoft.wsdl.calculator.Calculator;
+
+
+
 
 
 @Service
@@ -13,7 +16,7 @@ public class SoapToRestServiceImpl implements SoapToRestService {
 	public String getStringFromService() {
 		Calculator calculator = new Calculator();
 		// TODO Auto-generated method stub
-		return "the sum is =" + calculator.getICalculator().add(2, 5);
+		return "the sum is =" + calculator.getCalculatorSoap().add(5, 7);
 	}
 
 }

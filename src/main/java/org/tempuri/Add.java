@@ -1,9 +1,8 @@
 
-package com.parasoft.wsdl.calculator;
+package org.tempuri;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
@@ -18,7 +17,8 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="Result" type="{http://www.w3.org/2001/XMLSchema}float"/&gt;
+ *         &lt;element name="intA" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
+ *         &lt;element name="intB" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -29,28 +29,45 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "result"
+    "intA",
+    "intB"
 })
-@XmlRootElement(name = "multiplyResponse")
-public class MultiplyResponse {
+@XmlRootElement(name = "Add")
+public class Add {
 
-    @XmlElement(name = "Result")
-    protected float result;
+    protected int intA;
+    protected int intB;
 
     /**
-     * Gets the value of the result property.
+     * Gets the value of the intA property.
      * 
      */
-    public float getResult() {
-        return result;
+    public int getIntA() {
+        return intA;
     }
 
     /**
-     * Sets the value of the result property.
+     * Sets the value of the intA property.
      * 
      */
-    public void setResult(float value) {
-        this.result = value;
+    public void setIntA(int value) {
+        this.intA = value;
+    }
+
+    /**
+     * Gets the value of the intB property.
+     * 
+     */
+    public int getIntB() {
+        return intB;
+    }
+
+    /**
+     * Sets the value of the intB property.
+     * 
+     */
+    public void setIntB(int value) {
+        this.intB = value;
     }
 
 }

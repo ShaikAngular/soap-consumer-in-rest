@@ -1,8 +1,9 @@
 
-package com.parasoft.wsdl.calculator;
+package org.tempuri;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
@@ -17,8 +18,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="x" type="{http://www.w3.org/2001/XMLSchema}float"/&gt;
- *         &lt;element name="y" type="{http://www.w3.org/2001/XMLSchema}float"/&gt;
+ *         &lt;element name="DivideResult" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -29,45 +29,28 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "x",
-    "y"
+    "divideResult"
 })
-@XmlRootElement(name = "multiply")
-public class Multiply {
+@XmlRootElement(name = "DivideResponse")
+public class DivideResponse {
 
-    protected float x;
-    protected float y;
+    @XmlElement(name = "DivideResult")
+    protected int divideResult;
 
     /**
-     * Gets the value of the x property.
+     * Gets the value of the divideResult property.
      * 
      */
-    public float getX() {
-        return x;
+    public int getDivideResult() {
+        return divideResult;
     }
 
     /**
-     * Sets the value of the x property.
+     * Sets the value of the divideResult property.
      * 
      */
-    public void setX(float value) {
-        this.x = value;
-    }
-
-    /**
-     * Gets the value of the y property.
-     * 
-     */
-    public float getY() {
-        return y;
-    }
-
-    /**
-     * Sets the value of the y property.
-     * 
-     */
-    public void setY(float value) {
-        this.y = value;
+    public void setDivideResult(int value) {
+        this.divideResult = value;
     }
 
 }
